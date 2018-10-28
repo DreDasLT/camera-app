@@ -10,6 +10,7 @@
                     <webcam *ngIf="isCameraToggled"
                         [trigger]="triggerObservable" (imageCapture)="handleImage($event)"
                         (initError)="handleInitError($event)"
+                        [allowCameraSwitch]="false"
                     ></webcam>
                 </div>
 
